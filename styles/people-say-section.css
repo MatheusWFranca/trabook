@@ -1,0 +1,56 @@
+.what-people-bg {
+  background: #F7F8FC;
+}
+
+.what-people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.what-people h2 {
+  font-family: "Velkhov", serif;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.what-people p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 50px;
+  max-width: 34ch;
+}
+
+.what-people h2 > span {
+  color: #FA7436;
+}
+
+.comment {
+  padding: 30px 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, .1);
+  position: relative;
+}
+
+.comment::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background: url('../img/profile-pic.svg');
+  top: -35px;
+  left: -35px;
+}
+
+.comment span {
+  display: block;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.quote {
+  line-height: 1.9;
+}

@@ -1,0 +1,90 @@
+
+.deals h2 {
+  font-family: "Velkhov", serif;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.deals h2 span {
+  color: #FA7436;
+}
+
+.deals > p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.country-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.country-list img {
+  border-radius: 8px;
+}
+
+.box {
+  display: grid;
+  grid-template-areas: 
+  "top-left top-right"
+  "bottom-left bottom-right"
+  ;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0px 0px 4px 4px;
+  padding: 10px 0;
+}
+
+.city {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.country {
+  font-size: 14px;
+  color: #666666;
+  grid-area: bottom-left;
+  position: relative;
+  margin-left: 15px;
+}
+
+.country::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 16px;
+  background: url('./../img/vector-location.svg') no-repeat center center;
+  left: -15px;
+}
+
+.stars {
+  font-size: 14px;
+  color: #666666;
+  position: relative;
+  justify-self: end;
+}
+
+.stars::before {
+  content: '';
+  display: inline-block; 
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url('./img/vector-star.svg') no-repeat center center;
+  top: 2px;
+  left: -25px;
+}
+
+.price {
+  font-size: 14px;
+  color: #FA7436;
+  padding: 4px;
+  background-color: #FFE7DB;
+  border-radius: 4px;
+}

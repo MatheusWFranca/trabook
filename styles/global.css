@@ -1,0 +1,48 @@
+@import './header.css';
+@import './main-section.css';
+@import './todo-section.css';
+@import './deals-section.css';
+@import './people-say-section.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #FEFCFB;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  background: #FA7436;
+  padding: 13px 45px;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, .1);
+  transition: .2s ease-in-out;
+}
+
+.btn:hover {
+  background: rgba(250, 116, 54, .8)
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 70px 30px;
+}

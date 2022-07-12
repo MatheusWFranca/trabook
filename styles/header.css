@@ -1,0 +1,32 @@
+.header {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li+li {
+  margin-left: 15px;
+}
+
+.nav li a {
+  display: block;
+  padding: 15px;
+  transition: .2s ease-in-out;
+}
+
+.nav li a:hover {
+  color: #FA7436;
+}
+
+.login-register a:first-child {
+  padding-right: 15px;
+  margin-right: 15px;
+}
