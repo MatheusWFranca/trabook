@@ -3,6 +3,8 @@
 @import './todo-section.css';
 @import './deals-section.css';
 @import './people-say-section.css';
+@import './blog.css';
+@import './footer.css';
 
 * {
   padding: 0;

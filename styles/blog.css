@@ -1,0 +1,27 @@
+.blog h2 {
+  font-family: "Velkhov", serif;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.blog h2 span {
+  color: #FA7436;
+}
+
+.city-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.city-list p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.city-list span {
+  font-size: 16px;
+  color: #999;
+}
