@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 .titles h1 {
@@ -32,7 +32,9 @@
 }
 
 .travels {
-  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
   background: #FFF;
   margin: 0 auto;
   grid-column: 1 / -1;
@@ -43,8 +45,9 @@
 
 .travels ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .travels li {
@@ -64,3 +67,45 @@
 }
 
 
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .titles h1 {
+    font-size: 48px;
+  }
+
+  .titles p {
+    font-size: 16px;
+  }
+
+  .travels {
+    width: 100%;
+  }
+  
+  .travels ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .travel-image img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    gap: 30px;
+  }
+
+  .travels {
+    max-width: 80%;
+  }
+  .travels ul {
+    grid-template-columns: 1fr;
+    align-items: initial;
+  }
+  .titles h1 {
+    font-size: 40px;
+  }
+}

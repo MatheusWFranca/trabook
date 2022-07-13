@@ -48,3 +48,14 @@ body {
   margin: 0 auto;
   padding: 70px 30px;
 }
+
+
+@media (max-width: 500px) {
+  .content {
+    padding: 50px 30px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}

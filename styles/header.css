@@ -10,10 +10,8 @@
 
 .nav ul {
   display: flex;
-}
-
-.nav ul li+li {
-  margin-left: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .nav li a {
@@ -29,4 +27,18 @@
 .login-register a:first-child {
   padding-right: 15px;
   margin-right: 15px;
+}
+
+@media (max-width: 950px) {
+  .header {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .nav ul {
+    justify-content: center;
+  }
 }
