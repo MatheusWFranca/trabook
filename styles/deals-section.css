@@ -20,10 +20,13 @@
 
 .country-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px;
 }
 
+.country-list li {
+  max-width: 250px;
+}
 .country-list img {
   border-radius: 8px;
 }
@@ -42,7 +45,6 @@
 
 .city {
   font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .country {

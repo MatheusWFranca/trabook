@@ -23,12 +23,13 @@
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .card {
+  flex: 1 1 150px;
   padding: 60px 20px 30px 20px;
   background: #FFF;
   border-radius: 5px;

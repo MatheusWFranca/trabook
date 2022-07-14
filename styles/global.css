@@ -50,7 +50,7 @@ body {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content {
     padding: 50px 30px;
   }
