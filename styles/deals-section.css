@@ -90,3 +90,9 @@
   background-color: #FFE7DB;
   border-radius: 4px;
 }
+
+@media (max-width: 450px) {
+  .country-list {
+    justify-items: center;
+  }
+}

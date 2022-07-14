@@ -17,14 +17,23 @@
   gap: 30px;
 }
 
-
 .city-list p {
   font-size: 18px;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .city-list span {
   display: block;
   font-size: 16px;
   color: #999;
+}
+
+@media (max-width: 450px) {
+  .city-list {
+    justify-items: center;
+  }
+
+  .city-list li img {
+    width: 100%;
+  }
 }
